@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gigaland - Wallet</title>
+	<link rel="icon" href="./assets/img/logo-5.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="grid wide">
+			<div class="row">
+				<div class="col l-12 m-12 c-12">
+					<!-- Header -->
+					<div class="header-container">
+						<div class="header-with-search">
+							<div class="header__logo">
+								<a href="/" class="header__logo-link">
+									<img src="./assets/img/logo-light.png" alt="Gigaland">
+								</a>
+							</div>
+							<div class="header__search">
+								<input type="text" name="search" id="search" placeholder="search item here..." class="header__search-input">
+							</div>
+						</div>
+						<div class="header-modal js-modal">
+							<div class="modal-close js-modal-close-icon">
+								<i class="fa-solid fa-x"></i>
+							</div>
+							<div class="header-right js-modal-container">
+								<ul class="header__nav">
+									<li class="header__nav-item">
+										<a href="explore.html" class="header__nav-link">
+											<span class="header__nav-text">Explore</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a>
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="explore.html" class="header__subnav-link"> All NFTs</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Art</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Collectibles</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Domain Names</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Music</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Photography</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Sports</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Trading Card</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Utility</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Virtual World</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="rankings.html" class="header__nav-link">
+											<span class="header__nav-text">Stats</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="rankings.html" class="header__subnav-link">Rankings</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Activity</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="help.html" class="header__nav-link">
+											<span class="header__nav-text">Resources</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="help.html" class="header__subnav-link">Help Center</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Platform Status</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Partners</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Gas-Free Marketplace</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Taxes</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Blog</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Docs</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Newsletter</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="contact.html" class="header__nav-link">
+											<span class="header__nav-text">Contact Us</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+									</li>
+								</ul>
+								<div class="header_register">
+									<a href="login.html" class="login js-modal-close">Log In</a>
+									<a href="register.html" class="signup btn btn--primary js-modal-close">Register</a>
+								</div>
+							</div>
+						</div>
+						<!-- Mobile, tablet menu button -->
+						<div id="mobile-tablet-menu" class="mobile-tablet-menu-btn js-btn-menu">
+							<i class="fa-solid fa-bars menu-icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="wallet">
+		<div class="grid wide">
+			<div class="row">
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<span class="wallet-url__label">Most Popular</span>
+						<img src="./assets/img/wallet/1.png" alt="" class="wallet__img">
+						<h4>Metamask</h4>
+						<p>Start exploring blockchain applications in seconds.  Trusted by over 1 million users worldwide.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<span class="wallet-url__label">Most Simple</span>
+						<img src="./assets/img/wallet/8.png" alt="" class="wallet__img">
+						<h4>Torus</h4>
+						<p>Open source protocol for connecting decentralised applications to mobile wallets.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/2.png" alt="" class="wallet__img">
+						<h4>Bitski</h4>
+						<p>Bitski connects communities, creators and brands through unique, ownable digital content.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/3.png" alt="" class="wallet__img">
+						<h4>Fortmatic</h4>
+						<p>Let users access your Ethereum app from anywhere. No more browser extensions.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/4.png" alt="" class="wallet__img">
+						<h4>WalletConnect</h4>
+						<p>Open source protocol for connecting decentralised applications to mobile wallets.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/5.png" alt="" class="wallet__img">
+						<h4>Coinbase Wallet</h4>
+						<p>The easiest and most secure crypto wallet. ... No Coinbase account required.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/6.png" alt="" class="wallet__img">
+						<h4>Arkane</h4>
+						<p>Make it easy to create blockchain applications with secure wallets solutions.</p>
+					</a>
+				</div>
+				<div class="col l-3 m-6 c-12">
+					<a class="wallet-url" href="login.html">
+						<img src="./assets/img/wallet/7.png" alt="" class="wallet__img">
+						<h4>Authereum</h4>
+						<p>Your wallet where you want it. Log into your favorite dapps with Authereum.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="grid wide">
+			<div class="row footer-container">
+				<div class="col l-3 m-3 c-6">
+					<h5 class="footer-title">General</h5>
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">About</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">FAQ</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Support</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Build</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Careers</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col l-3 m-3 c-6">
+					<h5 class="footer-title">Technology</h5>
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Technology</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Roadmap</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Token</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Telemtry</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Lightpaper</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Whitepaper</a></li>
+					</ul>
+				</div>
+				<div class="col l-3 m-3 c-6">
+					<h5 class="footer-title">Community</h5>
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Community</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Documentation</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Brand Assets</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Forum</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Blog</a></li>
+						<li class="footer-item">
+							<a href="#" class="footer-item__link">Mailing List</a></li>
+					</ul>
+				</div>
+				<div class="col l-3 m-3 c-6">
+					<h5 class="footer-title">Newsletter</h5>
+					<div class="widget">
+						<p class="widget-text">Signup for our newsletter to get the latest news in your inbox.</p>
+						<form action="" class="footer__email">
+							<input type="email" placeholder="enter your email" class="email__input">
+							<a href="#" class="btn btn--primary btn__send">
+								<i class="fa-solid fa-arrow-right-long email__icon-send"></i>
+							</a>
+						</form>
+						<p class="widget-subtext">Your email is safe with us. We don't spam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
