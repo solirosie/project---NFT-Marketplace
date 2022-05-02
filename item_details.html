@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-	<header class="header" id="header">
+	<header class="header bgc" id="header">
 		<div class="grid wide">
 			<div class="row">
 				<div class="col l-12 m-12 c-12">
@@ -26,7 +26,7 @@
 					<div class="header-container">
 						<div class="header-with-search">
 							<div class="header__logo">
-								<a href="/" class="header__logo-link">
+								<a href="index.html" class="header__logo-link">
 									<img src="./assets/img/logo-light.png" alt="Gigaland">
 								</a>
 							</div>
@@ -108,7 +108,7 @@
 												<a href="#" class="header__subnav-link">Partners</a>
 											</li>
 											<li class="header__subnav-item">
-												<a href="#" class="header__subnav-link">Gas-Free Marketplace</a>
+												<a href="#" class="header__subnav-link">Gas</a>
 											</li>
 											<li class="header__subnav-item">
 												<a href="#" class="header__subnav-link">Taxes</a>
@@ -276,7 +276,7 @@
 					<div class="nft-item-price">
 						<img src="./assets/img/ethereum.svg" alt=""><span>0.059</span>($253.67)
 					</div>
-					<a href="wallet.html" class="btn btn--primary item__btn btn__buy-now">Buy Now</a>
+					<div class="btn btn--primary item__btn btn__buy-now js-btn-buynow">Buy Now</div>
 					<a href="wallet.html" class="btn btn--light item__btn">Place a Bid</a>
 				</div>
 			</div>
@@ -351,7 +351,56 @@
 				</div>
 			</div>
 		</div>
+		<hr>
+		<div class="grid wide">
+			<div class="subfooter">
+				<div class="ft-left">
+					<img src="./assets/img/logo.png" alt="Gigaland">
+					<p>© Copyright 2022 - Gigaland by Nguyen Thi Xuan Hong</p>
+				</div>
+				<div class="ft-right">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
 	</footer>
+
+	<!-- Modal -->
+	<div class="modal js-modal-buynow" id="buy_now">
+		<div class="modal-content buy-now__container">
+			<div class="modal-body">
+				<div class="btn-close js-modal-buynow-close">
+					<i class="fa-solid fa-x"></i>
+				</div>
+				<div class="form-border">
+					<h3>Checkout</h3>
+					You are about to purchase a <b>AnimeSailorClub #304</b> from <b>Monica Lucas</b>
+					<div class="spacer-single"></div>
+					<h6>Enter quantity. <span class="id-color-2">10 available</span></h6>
+					<input type="number" name="buy_now_qty" id="buy_now_qty" class="form-control mt10" value="1" min="1" max="10">
+					<div class="spacer-single"></div>
+					<div class="de-flex">
+						<div>Your balance</div>
+						<div><b>10.67856 ETH</b></div>
+					</div>
+					<div class="de-flex">
+						<div>Service fee 2.5%</div>
+						<div><b>0.00325 ETH</b></div>
+					</div>
+					<div class="de-flex">
+						<div>You will pay</div>
+						<div><b>0.013325 ETH</b></div>
+					</div>
+					<div class="spacer-single"></div>
+					<a href="wallet.html"  class="btn btn--primary btn-buynow">Add funds</a>
+				</div>
+			</div>
+		</div>
+	  </div>
 
 	<script src="./assets/js/main.js"></script>
 </body>

@@ -1,7 +1,7 @@
 // Toggle Like & Dislike
-function toggleLike(x) {
-	x.classList.toggle("icon--liked");
-  }
+	function toggleLike(x) {
+		x.classList.toggle("icon--liked");
+	}
 
 // Modal
 	const btnMenu = document.querySelector('.js-btn-menu')
@@ -25,3 +25,20 @@ function toggleLike(x) {
 	modalContainer.addEventListener('click', function(event){
 		event.stopPropagation()
 	});
+	
+
+	const btnBuynow = document.querySelector('.js-btn-buynow')
+	const modalBuynow = document.querySelector('.js-modal-buynow')
+	const closeBuynow = document.querySelector('.js-modal-buynow-close')
+	const modalBuynowContainer = document.querySelector('.js-modal-buynow-container')
+
+	function showModalBuynow(){
+		modalBuynow.classList.add('open')
+	}
+	function hideModalBuynow(){
+		modalBuynow.classList.remove('open')
+	}
+	closeBuynow.addEventListener('click', hideModalBuynow)
+	modal.addEventListener('click', hideModalBuynow)
+	
+	btnBuynow.addEventListener('click', showModalBuynow)

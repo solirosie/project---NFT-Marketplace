@@ -1,3 +1,6 @@
+/* PC */
+@media (min-width: 1024px) {
+}
 /* Mobile & Tablet */
 @media (max-width: 1023px){
     .hide-on-mobile-tablet{
@@ -75,6 +78,17 @@
     }
     .modal-close{
         display: block;
+    }
+    .subfooter{
+        margin-left: 20px;
+    }
+    .subfooter,.ft-left{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ft-left p,.ft-left img{
+        margin-left: 0;
+        margin-bottom: 16px;
     }
 }
 

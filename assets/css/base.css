@@ -52,15 +52,13 @@ html{
     background: rgba(131, 100, 226, .2);
     color: var(--secondary-color);
 }
-.btn-loadmore{
+.btn-loadmore,
+.btn-follow{
     height: 40px;
 }
-.btn-submit{
+.btn-submit,.btn-buynow{
     width: 100%;
     height: 40px;
-}
-.btn-follow{
-	height: 42px;
 }
 .btn-selector{
     text-align: center;
@@ -77,6 +75,21 @@ html{
     font-weight: 700;
 }
 
+/* ==================== */
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
 /* ================== */
 .header__search-input,
 .section-nfts__item,
@@ -87,7 +100,9 @@ html{
 .filter_by_duration__list li,
 .filter_by_category__list li,
 .help-item,
-.btn,.btn--primary{
+.btn,.btn--primary,
+.ft-right a i,
+.section-nfts__item-click-icon:after{
     -o-transition: .7s;
     -ms-transition: .7s;
     -moz-transition: .7s;
@@ -141,7 +156,6 @@ html{
 .section-collections__item:hover .section-collections__item-author-img{
 	-webkit-transform: scale(1.03);
             transform: scale(1.03);
-            
 }
 a{
     text-decoration: none;
@@ -150,4 +164,49 @@ h3 {
     font-size: 2.2rem;
     margin-bottom: 25px;
     font-weight: 700;
+}
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    transition: opacity .15s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    padding: 30px;
+}
+.btn-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 3;
+	font-size: 1.6rem;
+	color: var(--sub-text-color);
+	padding: 16px;
+	cursor: pointer;
+}
+.mt10{
+    margin-top: 10px;
 }

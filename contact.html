@@ -18,137 +18,141 @@
 	<link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-	<div class="app">
-		<header class="header" id="header">
-			<div class="grid wide">
-				<div class="row">
-					<div class="col l-12 m-12 c-12">
-						<!-- Header -->
-						<div class="header-container">
-							<div class="header-with-search">
-								<div class="header__logo">
-									<a href="/" class="header__logo-link">
-										<img src="./assets/img/logo-light.png" alt="Gigaland">
-									</a>
-								</div>
-								<div class="header__search">
-									<input type="text" name="search" id="search" placeholder="search item here..." class="header__search-input">
+	<header class="header bgc" id="header">
+		<div class="grid wide">
+			<div class="row">
+				<div class="col l-12 m-12 c-12">
+					<!-- Header -->
+					<div class="header-container">
+						<div class="header-with-search">
+							<div class="header__logo">
+								<a href="index.html" class="header__logo-link">
+									<img src="./assets/img/logo-light.png" alt="Gigaland">
+								</a>
+							</div>
+							<div class="header__search">
+								<input type="text" name="search" id="search" placeholder="search item here..." class="header__search-input">
+							</div>
+						</div>
+						<div class="header-modal js-modal">
+							<div class="modal-close js-modal-close-icon">
+								<i class="fa-solid fa-x"></i>
+							</div>
+							<div class="header-right js-modal-container">
+								<ul class="header__nav">
+									<li class="header__nav-item">
+										<a href="explore.html" class="header__nav-link">
+											<span class="header__nav-text">Explore</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a>
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="explore.html" class="header__subnav-link"> All NFTs</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Art</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Collectibles</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Domain Names</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Music</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Photography</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Sports</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Trading Card</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Utility</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link"> Virtual World</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="rankings.html" class="header__nav-link">
+											<span class="header__nav-text">Stats</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="rankings.html" class="header__subnav-link">Rankings</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Activity</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="help.html" class="header__nav-link">
+											<span class="header__nav-text">Resources</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+										<ul class="header__subnav">
+											<li class="header__subnav-item">
+												<a href="help.html" class="header__subnav-link">Help Center</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Platform Status</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Partners</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Gas</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Taxes</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Blog</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Docs</a>
+											</li>
+											<li class="header__subnav-item">
+												<a href="#" class="header__subnav-link">Newsletter</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__nav-item">
+										<a href="contact.html" class="header__nav-link">
+											<span class="header__nav-text">Contact Us</span>
+											<i class="fa-solid fa-angle-down header__nav-icon"></i>
+										</a> 
+									</li>
+								</ul>
+								<div class="header_register">
+									<a href="login.html" class="login js-modal-close">Log In</a>
+									<a href="register.html" class="signup btn btn--primary js-modal-close">Register</a>
 								</div>
 							</div>
-							<div class="header-modal js-modal">
-								<div class="modal-close js-modal-close-icon">
-									<i class="fa-solid fa-x"></i>
-								</div>
-								<div class="header-right js-modal-container">
-									<ul class="header__nav">
-										<li class="header__nav-item">
-											<a href="explore.html" class="header__nav-link">
-												<span class="header__nav-text">Explore</span>
-												<i class="fa-solid fa-angle-down header__nav-icon"></i>
-											</a>
-											<ul class="header__subnav">
-												<li class="header__subnav-item">
-													<a href="explore.html" class="header__subnav-link"> All NFTs</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Art</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Collectibles</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Domain Names</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Music</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Photography</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Sports</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Trading Card</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Utility</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link"> Virtual World</a>
-												</li>
-											</ul>
-										</li>
-										<li class="header__nav-item">
-											<a href="rankings.html" class="header__nav-link">
-												<span class="header__nav-text">Stats</span>
-												<i class="fa-solid fa-angle-down header__nav-icon"></i>
-											</a> 
-											<ul class="header__subnav">
-												<li class="header__subnav-item">
-													<a href="rankings.html" class="header__subnav-link">Rankings</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Activity</a>
-												</li>
-											</ul>
-										</li>
-										<li class="header__nav-item">
-											<a href="help.html" class="header__nav-link">
-												<span class="header__nav-text">Resources</span>
-												<i class="fa-solid fa-angle-down header__nav-icon"></i>
-											</a> 
-											<ul class="header__subnav">
-												<li class="header__subnav-item">
-													<a href="help.html" class="header__subnav-link">Help Center</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Platform Status</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Partners</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Gas-Free Marketplace</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Taxes</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Blog</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Docs</a>
-												</li>
-												<li class="header__subnav-item">
-													<a href="#" class="header__subnav-link">Newsletter</a>
-												</li>
-											</ul>
-										</li>
-										<li class="header__nav-item">
-											<a href="contact.html" class="header__nav-link">
-												<span class="header__nav-text">Contact Us</span>
-												<i class="fa-solid fa-angle-down header__nav-icon"></i>
-											</a> 
-										</li>
-									</ul>
-									<div class="header_register">
-										<a href="login.html" class="login js-modal-close">Log In</a>
-										<a href="register.html" class="signup btn btn--primary js-modal-close">Register</a>
-									</div>
-								</div>
-							</div>
-							<!-- Mobile, tablet menu button -->
-							<div id="mobile-tablet-menu" class="mobile-tablet-menu-btn js-btn-menu">
-								<i class="fa-solid fa-bars menu-icon"></i>
-							</div>
+						</div>
+						<!-- Mobile, tablet menu button -->
+						<div id="mobile-tablet-menu" class="mobile-tablet-menu-btn js-btn-menu">
+							<i class="fa-solid fa-bars menu-icon"></i>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 		<section id="section-contact">
 			<div class="grid wide">
+				<div class="row">
+					<div class="col l-12 m-12 c-12">
+						<h2 class="section__title">Contact Us</h2>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col l-8 m-12 c-12">
 						<h3>Do you have any question?</h3>
@@ -264,8 +268,23 @@
 					</div>
 				</div>
 			</div>
+			<hr>
+			<div class="grid wide">
+				<div class="subfooter">
+					<div class="ft-left">
+						<img src="./assets/img/logo.png" alt="Gigaland">
+						<p>© Copyright 2022 - Gigaland by Nguyen Thi Xuan Hong</p>
+					</div>
+					<div class="ft-right">
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
 		</footer>
-	</div>
 
 	<script src="./assets/js/main.js"></script>
 </body>
